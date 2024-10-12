@@ -1,0 +1,15 @@
+/*////////////AddOptions-AO////////////*/
+.ao-modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*////////////AddParameter-AP////////////*/
+.ap-modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*////////////ItemOptions-IO////////////*/
+

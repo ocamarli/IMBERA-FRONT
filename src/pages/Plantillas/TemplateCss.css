@@ -1,0 +1,14 @@
+/*********AddTemplate*******/
+.at-modal{
+    display: flex;
+    justify-content: center;
+}
+.noBullets{
+    list-style-type: none;
+    padding:  '0px !important';
+}
+/*********CardTemplate*******/
+/*********CodeInput*******/
+/*********ItemParametesTemplate******/
+/*********ItemTemplate**************/
+/*********ListParameterTemplate**************/

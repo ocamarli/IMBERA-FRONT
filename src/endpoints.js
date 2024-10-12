@@ -1,0 +1,88 @@
+const api = {
+ baseuri: `${process.env.REACT_APP_API_HOST}:${process.env.REACT_APP_API_PORT}/api/v1/`,
+  endpoints: {
+    login: "login",
+    user: "user",
+    actualizarUsuario:"usuario/actualizarUsuario",
+    actualizarCodigo:"codigo/actualizarCodigo",
+    actualizarEstatusUsuario:"usuario/actualizarEstatusUsuario",
+    deshabilitarUsuario:"usuario/deshabilitarUsuario",
+    crearParametro:"parametro/crearParametro",
+    registerSet:"register/set",
+    obtenerParametros:"parametro/obtenerParametros",
+    obtenerParametro:"parametro/obtenerParametro",
+    actualizarParametro:"parametro/actualizarParametro",
+    obtenerUsuarios:"usuario/obtenerUsuarios",
+    obtenerUsuario:"usuario/obtenerUsuario",
+    actualizarParametroPlantilla:"plantilla/actualizarParametro",  
+    actualizarPlantilla:"plantilla/actualizarPlantilla",
+    obtenerPlantillas:"plantilla/obtenerPlantillas",
+    obtenerPlantilla:"plantilla/obtenerPlantilla",
+    crearPlantilla:"plantilla/crearPlantilla",    
+    clonarPlantilla:"plantilla/clonarPlantilla",    
+    verificarParametros:"plantilla/verificarParametros",
+    obtenerRecetas:"receta/obtenerRecetas",
+    obtenerFirmwares: "firmware/obtenerFirmwares",
+    obtenerFirmware: "firmware/obtenerFirmware",
+    crearFirmware:"firmware/crearFirmware",
+    actualizarFirmware:"firmware/actualizarFirmware",
+    obtenerHardwares:"hardware/obtenerHardwares",
+    obtenerHardware:"hardware/obtenerHardware",
+    crearHardware:"hardware/crearHardware",
+    actualizarHardware:"hardware/actualizarHardware",
+    obtenerGaes:"gae/obtenerGaes",
+    obtenerGae:"gae/obtenerGae",
+    crearGae:"gae/crearGae",
+    actualizarGae:"gae/actualizarGae",
+    obtenerCodigos:"codigo/obtenerCodigos",
+    crearUsuario:"usuario/crearUsuario",
+    obtenerArchivosBase:"plantilla/obtenerArchivosBase"
+    
+  },
+};
+/*
+ baseuri: "https://imbvikkonapi.azurewebsites.net/api/v1/",
+ "https://vikkonapi.azurewebsites.net/api/v1/"
+function Encode2Url(obj) {
+  var str = [];
+  for(var p in obj)
+     str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+  return str.join("&");
+}
+*/
+export const ENV = {
+    obtenerArchivosBase:()=>api.baseuri+api.endpoints.obtenerArchivosBase,
+    obtenerGaes:()=> api.baseuri+api.endpoints.obtenerGaes,
+    obtenerGae:(idGae)=>api.baseuri+api.endpoints.obtenerGae+"/"+idGae,
+    crearGae:()=> api.baseuri+api.endpoints.crearGae,
+    actualizarGae:()=>api.baseuri+api.endpoints.actualizarGae,
+    actualizarCodigo:()=>api.baseuri+api.endpoints.actualizarCodigo,
+    crearFirmware:()=> api.baseuri+api.endpoints.crearFirmware,
+    actualizarUsuario:()=>api.baseuri+api.endpoints.actualizarUsuario,
+    actualizarEstatusUsuario :() =>api.baseuri+api.endpoints.actualizarEstatusUsuario,
+    obtenerUsuarios:()=>api.baseuri+api.endpoints.obtenerUsuarios,
+    obtenerUsuario:(idUsuario)=>api.baseuri+api.endpoints.obtenerUsuario+"/"+idUsuario,
+    actualizarParametroPlantilla:()=>api.baseuri+api.endpoints.actualizarParametroPlantilla,
+    obtenerFirmwares:()=>api.baseuri+api.endpoints.obtenerFirmwares,
+    obtenerFirmware:(idFirmware)=>api.baseuri+api.endpoints.obtenerFirmware+"/"+idFirmware,
+    actualizarFirmware:()=>api.baseuri+api.endpoints.actualizarFirmware,
+    obtenerHardwares:()=>api.baseuri+api.endpoints.obtenerHardwares,
+    obtenerHardware:(idHardware)=>api.baseuri+api.endpoints.obtenerHardware+"/"+idHardware,
+    crearHardware:()=> api.baseuri+api.endpoints.crearHardware,
+    actualizarHardware:()=> api.baseuri+api.endpoints.actualizarHardware,
+    actualizarPlantilla:()=>api.baseuri+api.endpoints.actualizarPlantilla,
+    obtenerPlantillas:()=>api.baseuri+api.endpoints.obtenerPlantillas,
+    obtenerPlantilla:(idPlantilla)=>api.baseuri+api.endpoints.obtenerPlantilla+"/"+idPlantilla,
+    crearPlantilla:()=>api.baseuri+api.endpoints.crearPlantilla,
+    clonarPlantilla:()=>api.baseuri+api.endpoints.clonarPlantilla,    
+    obtenerRecetas:()=>api.baseuri+api.endpoints.obtenerRecetas,
+    login:()=> api.baseuri+api.endpoints.login,
+    user:()=> api.baseuri+api.endpoints.user,
+    obtenerParametros: () => api.baseuri + api.endpoints.obtenerParametros,
+    obtenerParametro: (idParametro) => api.baseuri + api.endpoints.obtenerParametro+"/"+idParametro,
+    actualizarParametro: () => api.baseuri + api.endpoints.actualizarParametro,
+    crearParametro:() => api.baseuri + api.endpoints.crearParametro,
+    crearUsuario:()=>api.baseuri+api.endpoints.crearUsuario,
+    obtenerCodigos:()=>api.baseuri+api.endpoints.obtenerCodigos,
+    verificarParametros:()=>api.baseuri+api.endpoints.verificarParametros,
+};
